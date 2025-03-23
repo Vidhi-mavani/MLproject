@@ -19,12 +19,3 @@ class CustomException(Exception):  # Fixed typo: "Excepton" -> "Exception"
     def __str__(self):
         return self.error_message  # Fixed indentation
 
-# Set up logging configuration
-LOG_FILE = "logfile.log"
-logging.basicConfig(
-    filename=LOG_FILE,
-    format="[ %(asctime)s ] %(lineno)d %(name)s - %(message)s",
-    level=logging.INFO
-)
-
-
